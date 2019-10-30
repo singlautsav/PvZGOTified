@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="mainScreenDone">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pvz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pvz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/mainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/mainScreen.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +211,7 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1571679829779" duration="1882000" />
-      <workItem from="1572453343803" duration="5322000" />
+      <workItem from="1572453343803" duration="6114000" />
     </task>
     <task id="LOCAL-00001" summary="mainScreenTried">
       <created>1572460810177</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572462056993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitIgnored pvz.iml">
+      <created>1572462238407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572462238407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +257,8 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="mainScreenTried" />
     <MESSAGE value="mainScreenDone" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainScreenDone" />
+    <MESSAGE value="gitIgnored pvz.iml" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitIgnored pvz.iml" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

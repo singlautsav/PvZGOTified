@@ -20,7 +20,15 @@
       </image>
     </ImageView>
     <Label layoutX="44.0" layoutY="84.0" text="Label" textFill="#fff966" />
-    <Button id="newGame" fx:id="newBut" layoutX="456.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0" text="New Game" />
+    <Button id="newGame" fx:id="newBut"  layoutX="456.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0" text="New Game" >
+      <graphic>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="http://icons.iconarchive.com/icons/mirella-gabriele/fantasy-mediaeval/128/Poison-red-icon.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
     <Button id="saveGame" fx:id="saveBut" layoutX="456.0" layoutY="166.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0" text="Save Game" />
     <Button id="loadGame" fx:id="loadBut" layoutX="456.0" layoutY="205.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0" text="Load Game" />
     <Button id="exit" fx:id="exitBut" layoutX="456.0" layoutY="244.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0" text="Exit" />
