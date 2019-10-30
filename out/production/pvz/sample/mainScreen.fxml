@@ -19,16 +19,16 @@
       </image>
     </ImageView>
     <Label layoutX="44.0" layoutY="84.0" text="Label" textFill="#fff966" />
-    <Button id="newGame" fx:id="newBut" layoutX="437.0" layoutY="84.0" mnemonicParsing="false" opacity="0.29" prefHeight="0.0" prefWidth="86.0">
+    <Button id="newGame" fx:id="newBut" layoutX="437.0" layoutY="84.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="86.0">
       <graphic>
-        <ImageView pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="90.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@../images/NewGameBut.png" />
           </image>
         </ImageView>
       </graphic>
     </Button>
-    <Button id="loadGame" fx:id="loadBut" layoutX="437.0" layoutY="183.0" mnemonicParsing="false" opacity="0.28" prefHeight="39.0" prefWidth="124.0">
+    <Button id="loadGame" fx:id="loadBut" layoutX="437.0" layoutY="183.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0">
       <graphic>
         <ImageView fitHeight="91.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
           <image>
@@ -37,7 +37,7 @@
         </ImageView>
       </graphic>
     </Button>
-    <Button id="exit" fx:id="exitBut" layoutX="437.0" layoutY="282.0" mnemonicParsing="false" opacity="0.35" prefHeight="39.0" prefWidth="124.0">
+    <Button id="exit" fx:id="exitBut" layoutX="437.0" layoutY="282.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="124.0">
       <graphic>
         <ImageView fitHeight="91.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
           <image>
