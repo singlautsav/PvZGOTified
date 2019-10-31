@@ -1,12 +1,24 @@
 package sample;
 
-import javafx.scene.control.Button;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Controller {
-    public Button newBut;
 
-    public void start_new_game() {
-        System.out.println("Hello World");
-        //newBut.setText("Stop now.");
+    public void changeScreen(ActionEvent event) throws IOException {
+        Parent secondPane = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene secondScene = new Scene(secondPane);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(secondScene);
+        window.show();
     }
+
 }
