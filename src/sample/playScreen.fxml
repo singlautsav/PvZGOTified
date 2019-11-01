@@ -31,7 +31,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <GridPane layoutX="85.0" layoutY="35.0" prefHeight="84.0" prefWidth="528.0">
+      <GridPane layoutX="88.0" layoutY="36.0" prefHeight="84.0" prefWidth="528.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -42,6 +42,33 @@
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../images/chars/johnSnow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="33.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../images/chars/johnSnow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="33.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../images/chars/johnSnow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="33.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../images/chars/johnSnow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="34.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../images/chars/johnSnow.png" />
+               </image>
+            </ImageView>
+         </children>
       </GridPane>
       <GridPane layoutX="5.0" layoutY="159.0" prefHeight="576.0" prefWidth="77.0">
         <columnConstraints>
