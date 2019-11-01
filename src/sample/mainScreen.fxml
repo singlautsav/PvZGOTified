@@ -10,7 +10,7 @@
   <children>
     <ImageView fitHeight="400.0" fitWidth="711.1111111111111" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../images/BackGround.jpg" />
+        <Image url="@../images/25523.jpg" />
       </image>
     </ImageView>
     <ImageView id="game_of_thrones_game_thrones_series_chair_iron_throne_-512.png" fitHeight="123.0" fitWidth="124.0" layoutX="0.0" layoutY="0.0">
