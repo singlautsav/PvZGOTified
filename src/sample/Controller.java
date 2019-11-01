@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Controller {
 
     public void changeScreen(ActionEvent event) throws IOException {
-        Parent secondPane = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent secondPane = FXMLLoader.load(getClass().getResource("playScreen.fxml"));
         Scene secondScene = new Scene(secondPane);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
