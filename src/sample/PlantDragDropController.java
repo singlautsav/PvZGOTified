@@ -35,6 +35,7 @@ public class PlantDragDropController implements Initializable {
 
     @FXML
     public void handleDragOver(DragEvent event) {
+        System.out.println("hi");
         if(event.getDragboard().hasImage()) {
             event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
         }
