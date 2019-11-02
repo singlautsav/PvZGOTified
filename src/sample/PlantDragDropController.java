@@ -23,6 +23,9 @@ public class PlantDragDropController implements Initializable {
     @FXML
     private GridPane battlefield;
 
+    @FXML
+    private StackPane stX;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -58,6 +61,7 @@ public class PlantDragDropController implements Initializable {
         plant2.setFitHeight(100);
         plant2.setFitWidth(60);
         battlefield.getChildren().add(plant2);
+        stX.getChildren().add(plant2);
         event.setDropCompleted(true);
         event.consume();
         System.out.println("Dropped");
