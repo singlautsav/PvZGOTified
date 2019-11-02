@@ -3,6 +3,7 @@ module pvz {
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.media;
+//    requires kotlin.stdlib;
 
     opens sample;
 }

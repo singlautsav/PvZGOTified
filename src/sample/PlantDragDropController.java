@@ -41,19 +41,26 @@ public class PlantDragDropController implements Initializable {
     @FXML
     public void handleDragOver(DragEvent event) {
         System.out.println("hi");
-        if(event.getGestureSource()!= plant && event.getDragboard().hasImage()) {
+        if(event.getDragboard().hasImage()) {
             event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+            System.out.println("here");
         }
         event.consume();
     }
 
     @FXML
     public void handleDrop(DragEvent event) {
+        event.acceptTransferModes(TransferMode.ANY);
         Dragboard db = event.getDragboard();
-        if(db.hasImage()) {
-            ImageView plant2 = new ImageView(db.getImage());
-            battlefield.getChildren().add(plant2);
-        }
+
+        System.out.println("hello");
+        ImageView plant2 = new ImageView(db.getImage());
+        plant2.setFitHeight(100);
+        plant2.setFitWidth(60);
+        battlefield.getChildren().add(plant2);
+        event.setDropCompleted(true);
         event.consume();
+        System.out.println("Dropped");
+
     }
 }
