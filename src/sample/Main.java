@@ -27,7 +27,7 @@ public class Main extends Application {
         Media media = new Media(path);
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaPlayer.play();
-//        System.out.println(path);
+        System.out.println(path);
 
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -21,7 +21,7 @@ public class FirstController implements Initializable {
     }
 
     public void openSecondScene(ActionEvent event) throws IOException {
-        AnchorPane pane = (AnchorPane) FXMLLoader.load(getClass().getResource("playScreen.fxml"));
+        AnchorPane pane = (AnchorPane) FXMLLoader.load(getClass().getResource("sample.fxml"));
         rootPane.getChildren().setAll(pane);
     }
 }
