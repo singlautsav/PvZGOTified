@@ -2,6 +2,7 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
@@ -56,12 +57,22 @@ public class PlantDragDropController implements Initializable {
         event.acceptTransferModes(TransferMode.ANY);
         Dragboard db = event.getDragboard();
 
+//        Node node = event.getPickResult().getIntersectedNode();
         System.out.println("hello");
+//
+//
+//        stX.getChildren().add(plant2);
+//        Integer c = battlefield.getColumnIndex(node);
+//        Integer r = battlefield.getRowIndex(node);
+//        int x = c;
+//        int y = r;
         ImageView plant2 = new ImageView(db.getImage());
         plant2.setFitHeight(100);
         plant2.setFitWidth(60);
-        battlefield.getChildren().add(plant2);
-        stX.getChildren().add(plant2);
+//        Integer r =
+//        battlefield.add(plant2,x,y,1,1);
+        battlefield.add(plant2,2,2,1,1);
+
         event.setDropCompleted(true);
         event.consume();
         System.out.println("Dropped");
