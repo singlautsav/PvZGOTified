@@ -13,7 +13,6 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-
     public static void main(final String[] args) {
         launch(args);
     }
