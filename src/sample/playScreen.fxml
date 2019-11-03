@@ -32,7 +32,7 @@
             <StackPane onDragDropped="#handleDrop" onDragOver="#handleDragOver" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <HBox fx:id="sideBar" layoutX="146.0" prefHeight="135.0" prefWidth="489.0">
+      <HBox layoutX="146.0" prefHeight="135.0" prefWidth="489.0">
          <children>
             <ImageView fx:id="sideBar" fitHeight="144.0" fitWidth="99.0">
                <image>

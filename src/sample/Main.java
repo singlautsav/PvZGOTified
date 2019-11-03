@@ -12,13 +12,15 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main extends Application {
+    static Stage mainScreen;
+    private int difficulty = 1;
 
     public static void main(final String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(final Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainScreen.fxml"));
         Scene scene = new Scene(root);
 
@@ -27,9 +29,8 @@ public class Main extends Application {
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaPlayer.play();
         System.out.println(path);
-
         primaryStage.setScene(scene);
         primaryStage.show();
+        mainScreen = primaryStage;
     }
-
 }

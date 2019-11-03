@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,13 +12,15 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 
-public class Game {
+public class Game extends Application {
+
 
     private int level;
     private Parent pane;
     private Scene scene;
-    Game(int level,Parent pane,ActionEvent event) {
+    public Game(int level,Parent pane,ActionEvent event) {
         System.out.println("Game Started");
         this.level = level;
         this.pane = pane;
@@ -25,11 +28,14 @@ public class Game {
         Scene secondScene = new Scene(this.pane);
         this.scene = secondScene;
         Stage window = (Stage)((Node) event.getSource()).getScene().getWindow();
-
         window.setScene(secondScene);
         window.show();
+        //this.animate();
+    }
 
-        this.setCharacters();
+    @Override
+    public void start(Stage primaryStage) {
+
     }
 
     private void setLevel() {
@@ -39,16 +45,5 @@ public class Game {
         else {
             System.out.println("You Won!!");
         }
-    }
-
-    private void setCharacters() {
-        System.out.println("Setting Characters");
-        HBox hb = (HBox) this.scene.lookup("#sideBar");
-        Image image = new Image("file:../images/chars/johnSnow.png");
-       // System.out.println(image);
-        ImageView imageView = new ImageView();
-        imageView.setImage(image);
-        hb.getChildren().add(imageView);
-        System.out.println("Done");
     }
 }
