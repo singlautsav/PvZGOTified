@@ -32,24 +32,7 @@
             <StackPane onDragDropped="#handleDrop" onDragOver="#handleDragOver" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <HBox layoutX="146.0" prefHeight="135.0" prefWidth="489.0">
-         <children>
-            <ImageView fx:id="sideBar" fitHeight="144.0" fitWidth="99.0">
-               <image>
-                  <Image url="@../images/chars/tyrion.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="143.0" fitWidth="109.0">
-               <image>
-                  <Image url="@../images/chars/shield.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="141.0" fitWidth="96.0">
-               <image>
-                  <Image url="@../images/chars/danny.png" />
-               </image>
-            </ImageView>
-         </children></HBox>
+      <HBox fx:id="sideBar" layoutX="146.0" prefHeight="135.0" prefWidth="489.0" />
       <VBox layoutX="3.0" layoutY="159.0" prefHeight="566.0" prefWidth="78.0">
          <children>
             <ImageView fitHeight="118.0" fitWidth="117.0">

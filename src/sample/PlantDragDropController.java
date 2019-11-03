@@ -27,9 +27,6 @@ public class PlantDragDropController implements Initializable {
     @FXML
     private StackPane stX;
 
-    @FXML
-    private ImageView sideBar;
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
@@ -80,11 +77,5 @@ public class PlantDragDropController implements Initializable {
         event.consume();
         System.out.println("Dropped");
 
-    }
-
-    public void step() {
-        double intx = sideBar.getX()+10;
-        sideBar.setTranslateY(sideBar.getY());
-        sideBar.setTranslateX(intx);
     }
 }
