@@ -44,13 +44,11 @@ public class Game {
     private void setCharacters() {
         System.out.println("Setting Characters");
         HBox hb = (HBox) this.scene.lookup("#sideBar");
-        Image image = new Image(getClass().getResource("../images/chars/johnSnow.png").toExternalForm());
+        Image image = new Image("file:../images/chars/johnSnow.png");
        // System.out.println(image);
         ImageView imageView = new ImageView();
         imageView.setImage(image);
-        if(this.level == 1) {
-            hb.getChildren().add(imageView);
-        }
+        hb.getChildren().add(imageView);
+        System.out.println("Done");
     }
-
 }
