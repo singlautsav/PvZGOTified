@@ -1,28 +1,13 @@
 package sample;
 
-public abstract class Monster {
-    private int health;
-    private int speed;
-    private int Defense;
+public interface Monster {
 
-    public int getDefense() {
-        return this.health;
-    }
-
-    public int getSpeed() {
-        return this.speed;
-    }
-
-}
-
-class Cersie extends Monster {
-
-}
-
-class Danaeris extends Monster {
-
-}
-
-class NightKing extends Monster {
-
+    public void setHealth(int health);
+    public int getHealth();
+    public void setAttack(int attack);
+    public int getAttack();
+    public void move();
+    public void setSpeed(int speed);
+    public int getSpeed();
+    public void removeImage();
 }
