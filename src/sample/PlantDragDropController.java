@@ -94,6 +94,7 @@ public class PlantDragDropController implements Initializable {
 
     @FXML
     private void secondItemAction(ActionEvent event) {
+        System.exit(-1);
     }
 
 }

@@ -32,7 +32,7 @@ public class Controller {
         }
 
         else if(id.equals("exit")) {
-            System.exit(0);
+            System.exit(-1);
         }
 
 //        Scene secondScene = new Scene(secondPane);
