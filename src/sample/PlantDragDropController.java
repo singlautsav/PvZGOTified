@@ -1,8 +1,11 @@
 package sample;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
@@ -26,6 +29,12 @@ public class PlantDragDropController implements Initializable {
 
     @FXML
     private StackPane stX;
+
+    @FXML
+    private ContextMenu contextMenu;
+
+    @FXML
+    private Button menuBut;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -78,4 +87,13 @@ public class PlantDragDropController implements Initializable {
         System.out.println("Dropped");
 
     }
+
+    @FXML
+    private void firstItemAction(ActionEvent event) {
+    }
+
+    @FXML
+    private void secondItemAction(ActionEvent event) {
+    }
+
 }
