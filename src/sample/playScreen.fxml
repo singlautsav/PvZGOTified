@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1141.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlantDragDropController">
+<AnchorPane id="AnchorPane" fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1141.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlantDragDropController">
    <children>
       <ImageView fitHeight="781.0" fitWidth="1349.0" layoutX="-26.0" layoutY="-10.0">
          <image>
@@ -100,12 +100,12 @@
          </children>
       </VBox>
       <Button layoutX="861.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-      <Label layoutX="694.0" layoutY="14.0" prefHeight="17.0" prefWidth="117.0" text="Score">
+      <Label fx:id="scoreCounter" layoutX="679.0" layoutY="16.0" prefHeight="53.0" prefWidth="138.0" text="Scroll">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label layoutX="660.0" layoutY="67.0" prefHeight="53.0" prefWidth="170.0" text="Sun Count">
+      <Label fx:id="sunCounter" layoutX="697.0" layoutY="69.0" prefHeight="53.0" prefWidth="102.0" text="50" textAlignment="CENTER">
          <font>
             <Font size="36.0" />
          </font>
@@ -123,5 +123,20 @@
             </ImageView>
          </graphic>
       </MenuButton>
+      <ImageView fx:id="monster2" fitHeight="118.0" fitWidth="70.0" layoutX="1141.0" layoutY="381.0">
+         <image>
+            <Image url="@../images/chars/nightKingArmy1.png" />
+         </image>
+      </ImageView>
+      <ImageView id="monster" fx:id="monster1" fitHeight="118.0" fitWidth="70.0" layoutX="1001.0" layoutY="610.0">
+         <image>
+            <Image url="@../images/chars/nightKingArmy1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="scrollX" fitHeight="59.0" fitWidth="59.0" layoutX="619.0" layoutY="-39.0" onMouseClicked="#onClick">
+         <image>
+            <Image url="@../images/extraImages/scroll.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
