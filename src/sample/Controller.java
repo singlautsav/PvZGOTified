@@ -19,9 +19,10 @@ public class Controller {
 
         //System.out.println(id);
 
-        Parent secondPane = FXMLLoader.load(getClass().getResource("playScreen.fxml"));
+        Parent secondPane;
 
         if(id.equals("newGame")) {
+            secondPane =  FXMLLoader.load(getClass().getResource("playScreen.fxml"));
             Game game = new Game(1,secondPane,event);
         }
 
